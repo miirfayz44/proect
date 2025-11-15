@@ -1,0 +1,559 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.a {
+
+  width: 595px;
+  height: 842px;
+  position: relative;
+  overflow: hidden; /* Prevent content from overflowing */
+  margin: 0 auto; /* Center the container */
+}
+
+.a .text-wrapper {
+  position: absolute;
+  top: 55px;
+  left: 50px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-blend-mode: difference;
+  font-family: "Benzin-Bold-", Helvetica;
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 2.80px;
+  line-height: 15.5px;
+  white-space: nowrap;
+}
+
+.a .div {
+  position: absolute;
+  top: 126px;
+  left: 49px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0px 0px 0px #000000;
+  background-blend-mode: difference;
+  font-family: "Benzin-Bold-", Helvetica;
+  font-weight: bold;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 33.3px;
+  white-space: nowrap;
+}
+
+.a .group {
+  position: absolute;
+  width: 414px;
+  height: auto;
+  top: 74px;
+  left: 49px;
+  display: flex;
+}
+
+.a .group-2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.a .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 138px;
+  height: 11px;
+  background-color: #000000;
+}
+
+.a .rectangle-2 {
+  position: absolute;
+  top: 131px;
+  left: 1px;
+  width: 238px;
+  height: 16px;
+  background-color: #000000;
+}
+
+.a .p {
+  position: relative;
+  width: 100%;
+  display: block;
+  font-family: "Gotham Pro-Medium", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0.30px;
+  line-height: 1.5;
+  text-align: left;
+  white-space: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.a .span {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #000000;
+  letter-spacing: 0.03px;
+  padding: 2px 4px;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+.a .text-wrapper-2 {
+  font-weight: 500;
+  color: #171717;
+  letter-spacing: 0.03px;
+}
+
+.a .text-wrapper-3 {
+  font-family: "Gotham Pro-Regular", Helvetica;
+  color: #000000;
+  letter-spacing: 0.03px;
+  display: inline;
+  white-space: normal;
+}
+
+.a .text-wrapper-4 {
+  position: absolute;
+  top: 775px;
+  left: 52px;
+  width: 48px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Benzin-Regular-", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 9.8px;
+}
+
+.a .text-wrapper-5 {
+  position: absolute;
+  top: 159px;
+  left: 50px;
+  width: 535px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Gotham Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 15.5px;
+}
+
+.a .text-wrapper-6 {
+  position: absolute;
+  top: 206px;
+  left: 51px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gotham Pro-Medium", Helvetica;
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 15.5px;
+  white-space: nowrap;
+}
+
+.a .text-wrapper-7 {
+  position: absolute;
+  top: 300px;
+  left: 129px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000a3;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.a .rectangle-3 {
+  position: absolute;
+  top: 250px;
+  left: 48px;
+  width: 500px;
+  height: 40px;
+  border: none;
+  padding: 8px 12px;
+  font-family: "Gotham Pro-Regular", Helvetica;
+  font-size: 14px;
+  color: #000000;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #c4c4c4;
+  border-radius: 4px;
+}
+
+.a .rectangle-4 {
+  position: absolute;
+  top: 330px;
+  left: 48px;
+  width: 500px;
+  height: 40px;
+  border: none;
+  padding: 8px 12px;
+  font-family: "Gotham Pro-Regular", Helvetica;
+  font-size: 14px;
+  color: #000000;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #c4c4c4;
+  border-radius: 4px;
+}
+
+.a .rectangle-5 {
+  position: absolute;
+  top: 420px;
+  left: 48px;
+  width: 500px;
+  height: 40px;
+  border: none;
+  padding: 8px 12px;
+  font-family: "Gotham Pro-Regular", Helvetica;
+  font-size: 14px;
+  color: #000000;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #c4c4c4;
+  border-radius: 4px;
+}
+
+.a .rectangle-6 {
+  position: absolute;
+  top: 500px;
+  left: 48px;
+  width: 500px;
+  height: 40px;
+  border: none;
+  padding: 8px 12px;
+  font-family: "Gotham Pro-Regular", Helvetica;
+  font-size: 14px;
+  color: #000000;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #c4c4c4;
+  border-radius: 4px;
+}
+
+.a .rectangle-7 {
+  position: absolute;
+  top: 580px;
+  left: 48px;
+  width: 500px;
+  height: 40px;
+  border: none;
+  padding: 8px 12px;
+  font-family: "Gotham Pro-Regular", Helvetica;
+  font-size: 14px;
+  color: #000000;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #c4c4c4;
+  border-radius: 4px;
+}
+
+.a .rectangle-3:focus,
+.a .rectangle-4:focus,
+.a .rectangle-5:focus,
+.a .rectangle-6:focus,
+.a .rectangle-7:focus {
+  box-shadow: 0 0 0 2px #4a90e2;
+}
+
+.a .rectangle-3::placeholder,
+.a .rectangle-4::placeholder,
+.a .rectangle-5::placeholder,
+.a .rectangle-6::placeholder,
+.a .rectangle-7::placeholder {
+  color: #666666;
+  opacity: 1;
+}
+
+.a .text-wrapper-8 {
+  position: absolute;
+  top: 379px;
+  left: 129px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000a3;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.a .text-wrapper-9 {
+  position: absolute;
+  top: 469px;
+  left: 129px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000a3;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.a .text-wrapper-10 {
+  position: absolute;
+  top: 548px;
+  left: 166px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000a3;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.a .text-wrapper-11 {
+  position: absolute;
+  top: 627px;
+  left: 215px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000a3;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.a .ellipse {
+  position: absolute;
+  top: 665px;
+  left: 50px;
+  width: 18px;
+  height: 18px;
+  background-color: #d9d9d9;
+  border-radius: 9px;
+}
+
+.a .text-wrapper-12 {
+  position: absolute;
+  top: 655px;
+  left: 83px;
+  width: 452px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.a .ellipse-2 {
+  position: absolute;
+  top: 702px;
+  left: 48px;
+  width: 18px;
+  height: 18px;
+  background-color: #d9d9d9;
+  border-radius: 9px;
+}
+
+.a .text-wrapper-13 {
+  position: absolute;
+  top: 692px;
+  left: 81px;
+  width: 452px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.a .rectangle-8 {
+  position: absolute;
+  top: 766px;
+  left: 442px;
+  width: 113px;
+  height: 34px;
+  background-color: #222222;
+}
+
+.a .text-wrapper-14 {
+  cursor: pointer;
+  position: absolute;
+  top: 773px;
+  left: 453px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* Checkbox Styles */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+/* Hide the default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom checkbox */
+.checkmark {
+  position: absolute;
+  left: 48px;
+  height: 18px;
+  width: 18px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #000000;
+}
+
+/* Style the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Style the text next to the checkbox */
+.checkbox-text {
+  margin-left: 40px;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.4;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+/* Position the first checkbox */
+.checkbox-container:first-of-type {
+  top: 670px;
+}
+
+.checkbox-container:first-of-type .checkbox-text {
+  position: absolute;
+  left: 76px;
+  top: -8px;
+  width: 450px;
+}
+
+/* Position the second checkbox */
+.checkbox-container:last-of-type {
+  top: 705px;
+}
+
+.checkbox-container:last-of-type .checkbox-text {
+  position: absolute;
+  left: 76px;
+  top: -8px;
+  width: 450px;
+}
