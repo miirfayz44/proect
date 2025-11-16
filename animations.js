@@ -51,13 +51,13 @@
           case 2:
           case 3:
           case 4:
-          case 5: handleAutoTransition(pageNum, pageNum + 1, 10000); break; // 10 sec
+          case 5: handleAutoTransition(pageNum, pageNum + 1, 60000); break; // 60 sec
           case 6: handlePage6(); break;
           case 7: handlePage7(); break;
           case 8: handlePage8(); break;
-          case 9: handleAutoTransition(9, 11, 10000); break; // 10 sec
-          case 11: handleAutoTransition(11, 12, 20000); break; // 20 sec
-          case 12: handleAutoTransition(12, 1, 10000); break; // 10 sec back to 1
+          case 9: handleAutoTransition(9, 11, 60000); break; // 60 sec
+          case 11: handleAutoTransition(11, 12, 60000); break; // 60 sec
+          case 12: handleAutoTransition(12, 1, 60000); break; // 60 sec back to 1
       }
   }
 
