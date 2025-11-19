@@ -557,3 +557,65 @@ a {
   top: -8px;
   width: 450px;
 }
+
+
+/* ============================= */
+/* 📱 MOBILE VERSION (max 480px) */
+/* ============================= */
+@media (max-width: 480px) {
+
+
+  /* INPUTLAR width KICHIKROQ */
+  .a .rectangle-3,
+  .a .rectangle-4,
+  .a .rectangle-5,
+  .a .rectangle-6,
+  .a .rectangle-7 {
+    width: 90%;
+    left: 5%;
+  }
+
+  /* Sarlavhalar ham markazlashadi */
+  .a .text-wrapper-7,
+  .a .text-wrapper-8,
+  .a .text-wrapper-9,
+  .a .text-wrapper-10,
+  .a .text-wrapper-11 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  /* Checkboxlar */
+  .checkbox-container:first-of-type,
+  .checkbox-container:last-of-type {
+    left: 0;
+    width: 100%;
+  }
+
+  .checkmark {
+    left: 5%;
+  }
+
+  .checkbox-text {
+    margin-left: -16px;
+    width: 80%;
+    white-space: normal;
+    font-size: 12px;
+  }
+
+  /* OPŁATIT BUTTON */
+  .a .rectangle-8 {
+    left: 50%;
+    transform: translateX(14%);
+    width: 150px;
+  }
+
+  .a .text-wrapper-14 {
+    top: 774px;
+    left: 50%;
+    transform: translateX(57%);
+   }
+
+}

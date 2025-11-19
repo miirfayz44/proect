@@ -359,3 +359,98 @@ html, body {
   letter-spacing: 0;
   line-height: normal;
 }
+
+@media (max-width: 420px){
+  .text-wrapper{
+    left: 20px !important;
+  }
+
+  .group{
+    left: 20px !important;
+  }
+
+  .text-wrapper-5{
+    left: 20px !important;
+  }
+
+  .div{
+    left: 20px !important;
+  }
+
+  .text-wrapper-6{
+    left: 20px !important;
+  }
+
+    .am-x{
+      left: -8px !important;
+      height: 260px !important;
+      width: 140px !important;
+    }
+
+    .img{
+      left: 120px !important;
+      height: 255px !important;
+      width: 155px !important;
+    }
+
+
+    .am-x-2{
+     left: 260px !important;
+     width: 155px !important;
+     height: 240px !important;
+    }
+
+    .am-x-3{
+       left: 10px !important;
+      height: 180px !important;
+      width: 120px !important;
+    }
+
+    .am-x-4{
+      left: 155px !important;
+      height: 190px !important;
+      width: 125px !important;
+    }
+
+    .am-x-5{
+      left: 290px !important;
+      height: 200px !important;
+      width: 130px !important;
+    }
+
+
+    .group-3{
+      left: 45px !important;
+      top: 520px !important;
+    }
+
+    .group-4{
+      top: 520px !important;
+      left: 177px !important;
+    }
+
+    .group-5{
+      top: 515px !important;
+      left: 315px !important;
+    }
+
+    .group-6{
+      top: 735px !important;
+      left: 330px !important;
+    }
+
+    .group-7{
+      left: 35px !important;
+      top: 735px !important;
+    }
+
+    .a .rectangle-5{
+      left: 140px !important;
+      top: 790px !important;
+    }
+
+    .text-wrapper-9{
+      left: 157px !important;
+      top: 797px !important;
+    }
+}

@@ -452,3 +452,92 @@ section {
   line-height: normal;
   white-space: nowrap;
 }
+
+@media (max-width: 420px) {
+  .div{
+    font-size: 24px;
+    left: 30px !important;
+  }
+
+  .text-wrapper {
+    font-size: 12px;
+    left: 30px !important;
+  }
+
+  .p{
+    left: -20px!important;
+  }
+
+  .text-wrapper-5{
+    font-size: 12px;
+    left: 30px !important;
+    width: 340px !important;
+  }
+
+   .text-wrapper-6{
+    font-size: 10px;
+    left: 30px !important;
+   top: 245px !important;
+  }
+
+  .rectangle-2{
+    left: -20px !important;
+    top: 170px !important;
+  }
+
+  .p{
+    position: absolute;
+  }
+
+  .pam{
+    left: -41px !important;
+    margin-top: 40px;
+  }
+
+  .line{
+    left: 160px !important;
+    top: 470px !important;
+  }
+  .text-wrapper-9{
+    left: 250px !important;
+    top: 460px !important;
+  }
+
+  .text-wrapper-11{
+    left: 260px !important;
+    top: 540px !important;
+  }
+
+   .line-3{
+    left: 150px !important;
+    top: 550px !important;
+  }
+
+  .line-2{
+    left: 230px !important;
+    top: 550px !important;
+  }
+
+  .img{
+    left: 240px !important;
+  }
+
+  .text-wrapper-10{
+    left: 310px !important;
+  }
+
+  .group-3{
+    margin-top: 25px;
+  }
+
+  .a .element{
+  top: 700px !important;
+  }
+
+ .group-5{
+  left: 270px !important;
+ }
+
+  
+
+}

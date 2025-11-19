@@ -409,3 +409,109 @@ a {
   letter-spacing: 0;
   line-height: 27.2px;
 }
+
+/* ============================= */
+/*  📱 MOBILE SAFE SCALE (max 480px) */
+/* ============================= */
+@media (max-width: 480px) {
+  .a .benzin-bold {
+    top: 289px;
+    left: 300px;
+    font-family: "Benzin-Bold-☞", Helvetica;
+    position: absolute;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: #000000;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 27.2px;
+  }
+  .a .gotham-pro-medium {
+    top: 276px;
+    left: 50px;
+    font-family: "Gotham Pro-Medium", Helvetica;
+    font-weight: 500;
+    position: absolute;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 27.2px;
+}
+
+.a .benzin-medium {
+  top: 466px;
+  left: 286px;
+  font-family: "Benzin-Medium-☞", Helvetica;
+  position: absolute;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: #000000;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 25.2px;
+}
+
+.a .gotham-pro-black {
+  top: 453px;
+  left: 46px;
+  font-family: "Gotham Pro-Black", Helvetica;
+  font-weight: 900;
+  position: absolute;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 27.2px;
+}
+
+.a .rectangle-7{
+  top: 639px;
+  left: 161px;
+  width: 116px;
+  height: 22px;
+  position: absolute;
+  background-color: #000000;
+}
+
+.a .group-4 {
+  position: absolute;
+  top: 643px;
+  left: 163px;
+  width: 113px;
+  height: 15px;
+  display: flex;
+}
+
+.a .text-wrapper-8{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 111px;
+height: 15px;
+font-family: "Gotham Pro-Black", Helvetica;
+font-weight: 900;
+color: #ffffff;
+font-size: 14px;
+letter-spacing: 0;
+line-height: 14.8px;
+white-space: nowrap;
+}
+
+.a .text-wrapper-9{
+  left: 130px;
+}
+
+}

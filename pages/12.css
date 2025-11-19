@@ -214,3 +214,90 @@ html, body {
   height: 100px;
   aspect-ratio: 0.5;
 }
+@media (max-width: 480px) {
+
+  .a {
+    height: 842px;           /* Siz aytgan o'lcham */
+    width: 100%;             /* Telefonlarga moslashadi */
+    display: flex;
+    flex-direction: column;  /* Rasmlarni ustma-ust qiladi */
+    justify-content: flex-end; /* Rasmlarni konteyner pastiga tushiradi */
+    align-items: center;     /* O'rtalab turadi */        /* Pastki bo'shliq bo'lmasligi uchun */
+  }
+
+  .a .text-wrapper {
+    font-size: 10px;
+    top: 35px;
+    left: 20px;
+  }
+
+  .a .group {
+    top: 55px;
+    left: 20px;
+    width: 300px;
+  }
+
+  .a .p {
+    font-size: 7.5px;
+    line-height: 1.3;
+  }
+
+  .a .span {
+    font-size: 8px;
+    padding: 1px 3px;
+  }
+
+  .a .text-wrapper-4 {
+    font-size: 20px;
+    top: 260px;
+    left: 20px;
+    width: 300px;
+    line-height: 22px;
+  }
+
+  .a .text-wrapper-5 {
+    font-size: 14px;
+    top: 305px;
+    left: 20px;
+  }
+
+  .a .text-wrapper-6 {
+    font-size: 8px;
+    top: 520px;
+    left: 240px;
+  }
+
+/* rasmlar bo */
+
+
+
+.a .bez-znakov {
+  position: absolute;
+  left: 180px;
+  top: 586px; /* Rasmlar joylashuvi */
+  width: 200px;
+  height: 260px;
+}
+
+.a .img {
+  position: absolute;
+  left: 156px;
+  top: 642px;
+  width: 100px;
+  height: 200px;
+}
+
+.a .bez-znakov-2 {
+  position: absolute;
+  left: 99px;
+  top: 723px;
+  width: 60px;
+  height: 120px;
+}
+
+.a .bez-znakov-3 {
+  position: absolute;
+  left: 50px;
+  top: 745px;
+}
+}

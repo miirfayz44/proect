@@ -361,3 +361,94 @@ html, body {
   letter-spacing: 0;
   line-height: normal;
 }
+
+@media (max-width: 420px){
+
+  .text-wrapper{
+    left: 20px !important
+  }
+
+  .p{
+    left: -27px !important
+  }
+
+  .text-wrapper-4{
+    left: 20px !important;
+    top: 810px !important;
+  }
+
+  .voennaya-kartinka{
+    left: 20px !important;
+  }
+
+  .cvetok{
+    left: 20px !important;
+  }
+
+  .voennaya-kartinka-2{
+    left: 20px !important;
+  }
+
+  .img{
+    left: 230px !important;
+  }
+
+  .cvetok-x{
+    left: 230px !important;
+  }
+
+  .cvetok-2{
+    left: 230px !important;
+  }
+
+  .a .group-4 {
+    left: -70px !important;
+  }
+
+  .a .rectangle-4{
+    left: 134px !important;
+  }
+
+  .text-wrapper-8{
+    left: 134px !important;
+  }
+
+  .a .group-6{
+    left: -70px !important;
+  }
+
+  .a .group-9{
+    left: 280px !important;
+  }
+
+  .a .group-7{
+    left: 70px !important;
+  }
+
+  .a .group-8{
+    left: 280px !important;
+  }
+
+ .a .text-wrapper-5{
+    left: 20px !important;
+  }
+
+  .div{
+    left: 20px !important;
+  }
+
+  .a .rectangle-5{
+    left: 149px !important;
+    top: 800px !important;
+  }
+
+   .text-wrapper-9{
+    left: 165px !important;
+    top: 810px !important;
+  }
+
+  .text-wrapper-6{
+    left: 20px !important;
+  }
+
+}

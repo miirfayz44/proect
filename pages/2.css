@@ -414,3 +414,62 @@ button:focus-visible {
 a {
   text-decoration: none;
 }
+
+@media (max-width: 420px) {
+  
+  .a .p{
+    font-size: 10px !important;
+    left: 50px !important;
+  }
+
+   .div .p{
+    font-size: 10px !important;
+    left: 30px !important;
+  }
+
+  .a .text-wrapper {
+    font-size: 12px !important;
+    left: 100px !important;
+  }
+
+  .a .div {
+    font-size: 24px !important;
+    left: 100px !important;
+  }
+
+  .a .text-wrapper-4 {
+    width: 100% !important;
+    left: 50px !important;
+    max-width: 481px;
+    max-height: 52px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Benzin-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000; 
+    letter-spacing: 0;
+    line-height: 26.2px;
+  }
+
+  .bez-znakov{
+    left: 40px !important;
+  }
+
+  .a .text-wrapper-4 {
+    left: -111px !important;
+  }
+
+  .bez-znakov-3{
+    left: 35px !important;
+  }
+
+  .bez-znakov-2{
+    left: 335px !important;
+  }
+
+  .bez-znakov-5{
+    left: 335px !important;
+  }
+
+
+}
