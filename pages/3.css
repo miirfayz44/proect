@@ -486,10 +486,21 @@ section {
 
   .text-wrapper-9{
     left: 140px !important;
+    font-size: 17px !important;
   }
 
   .group-10{
     left: 273px !important;
   }
 
+  .a .text-wrapper-4{
+    font-size: 17px !important;
+  }
+  .a .text-wrapper-8{
+    font-size: 17px !important;
+  }
+
+  .a .text-wrapper-10{
+    font-size: 17px !important;
+  }
 }

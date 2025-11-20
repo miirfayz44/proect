@@ -333,6 +333,23 @@ section {
     letter-spacing: 0;
     line-height: 16.4px;
   }
+  .a .text-wrapper-6 {
+    position: absolute;
+    top: 823px;
+    left: 403px;
+    height: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gotham Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff2e;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: 9.0px;
+    white-space: nowrap;
+}
+
   .a .bez-znakov {
     position: absolute;
     left: 305px;
