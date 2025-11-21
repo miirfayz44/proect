@@ -269,9 +269,9 @@ section {
   align-items: center;
   justify-content: center;
   font-family: "Benzin-Bold-☞", Helvetica;
-  font-weight: 400;
+  font-weight: bold;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.5px;
   line-height: 11.2px;
   white-space: nowrap;
