@@ -353,9 +353,9 @@ html, body {
   left: 480px;
   width: 74px;
   font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
+  font-weight: bold;
   color: #000000;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
 }

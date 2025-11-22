@@ -351,7 +351,7 @@ a {
   font-family: "Benzin-Bold-☞", Helvetica;
   font-weight: bold;
   color: #000000;
-  font-size: 13px;
+  font-size: 10px;
   letter-spacing: 0;
   line-height: 11.2px;
   white-space: nowrap;
@@ -390,9 +390,9 @@ a {
   left: 480px;
   width: 74px;
   font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
+  font-weight: bold;
   color: #000000;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
 }
