@@ -166,7 +166,7 @@ section {
   width: 138px;
   height: 15px;
   font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: 500;
+  font-weight: bold;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -203,9 +203,9 @@ section {
   align-items: center;
   justify-content: center;
   font-family: "Benzin-Bold-☞", Helvetica;
-  font-weight: 400;
+  font-weight: bold;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0;
   line-height: 11.2px;
   white-space: nowrap;
@@ -225,7 +225,7 @@ section {
   left: 0;
   height: 15px;
   font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: 500;
+  font-weight: bold;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -259,7 +259,7 @@ section {
   width: 139px;
   height: 15px;
   font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: 500;
+  font-weight: bold;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -285,7 +285,7 @@ section {
   width: 147px;
   height: 15px;
   font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: 500;
+  font-weight: bold;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -302,7 +302,7 @@ section {
   left: 230px;
   height: 15px;
   font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: 500;
+  font-weight: bold;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -336,7 +336,7 @@ section {
   width: 145px;
   height: 15px;
   font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: 500;
+  font-weight: bold;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
