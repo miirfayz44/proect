@@ -60,7 +60,7 @@ section {
   align-items: center;
   justify-content: center;
   background-blend-mode: difference;
-  font-family: "Benzin-Bold-", Helvetica;
+  font-family: 'MyFont', sans-serif;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 2.80px;
@@ -135,7 +135,7 @@ section {
   align-items: center;
   justify-content: center;
   background-blend-mode: difference;
-  font-family: "Benzin-Bold-", Helvetica;
+  font-family: 'MyFont', sans-serif;
   font-weight: bold;
   color:#000000;
   font-size: 32px;

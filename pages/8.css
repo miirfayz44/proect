@@ -1,6 +1,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-* {
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/Benzin-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}* {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
@@ -56,8 +62,8 @@ a {
   justify-content: center;
   text-shadow: 0px 0px 0px #000000;
   background-blend-mode: difference;
-  font-family: "Benzin-Bold-☞", Helvetica;
-  font-weight: bold;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
+  font-weight: 400;
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 2.80px;
@@ -75,8 +81,8 @@ a {
   justify-content: center;
   text-shadow: 0px 0px 0px #000000;
   background-blend-mode: difference;
-  font-family: "Benzin-Bold-☞", Helvetica;
-  font-weight: bold;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
+  font-weight: 400;
   color: #ffffff;
   font-size: 30px;
   letter-spacing: 0;
@@ -197,8 +203,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: bold;
+   font-family: 'gotham pro', Helvetica, Arial, sans-serif;
+font-weight: 500;
   background-color: #ffffff;
   color: #000000;
   font-size: 14px;
@@ -297,10 +303,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
-  font-size: 13px;
+  font-size: 10px;
   letter-spacing: 0;
   line-height: 11.2px;
   white-space: nowrap;
@@ -348,7 +354,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
   font-size: 12px;
@@ -448,7 +454,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
   font-size: 14px;

@@ -39,7 +39,7 @@ a {
   left: 50px;
   height: 16px;
   background-blend-mode: difference;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
   font-size: 14px;
@@ -58,7 +58,7 @@ a {
   height: 33px;
   text-shadow: 0px 0px 0px #000000;
   background-blend-mode: difference;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
   font-size: 30px;
@@ -357,7 +357,7 @@ a {
 .a .benzin-bold {
   top: 277px;
   left: 300px;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   position: absolute;
   height: 135px;
   display: flex;
@@ -417,7 +417,7 @@ a {
   .a .benzin-bold {
     top: 289px;
     left: 300px;
-    font-family: "Benzin-Bold-☞", Helvetica;
+    font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
     position: absolute;
     height: 135px;
     display: flex;

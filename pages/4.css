@@ -1,6 +1,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-* {
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/Benzin-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}* {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   margin: 0;
@@ -46,7 +52,7 @@ section {
   position: absolute;
   top: 55px;
   left: 50px;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
   font-size: 14px;
@@ -64,7 +70,7 @@ section {
   align-items: center;
   justify-content: center;
   background-blend-mode: difference;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
   font-size: 32px;
@@ -209,8 +215,8 @@ section {
 
 .a .text-wrapper-7 {
   text-align: left;
-  font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: bold;
+   font-family: 'gotham pro', Helvetica, Arial, sans-serif;
+font-weight: 500;
   color: #000000;
   font-size: 18px;
   margin: 0;
@@ -242,10 +248,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Benzin-Bold-☞", Helvetica;
-  font-weight: bold;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
+  font-weight: 400;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 10px;
   letter-spacing: 0;
   line-height: 11.2px;
   white-space: nowrap;
@@ -297,7 +303,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: 400;
   color: #000000;
   font-size: 12px;
@@ -314,7 +320,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: 400;
   color: #000000;
   font-size: 12px;
@@ -331,7 +337,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: 400;
   color: #000000;
   font-size: 12px;

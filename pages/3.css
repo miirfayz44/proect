@@ -1,6 +1,21 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-* {
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/Benzin-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham pro';
+  src: url('../fonts/Gotham-Medium.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+*{
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   margin: 0;
@@ -46,7 +61,7 @@ section {
   position: absolute;
   top: 55px;
   left: 50px;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
   font-size: 14px;
@@ -65,7 +80,7 @@ section {
   height: 16px;
   text-shadow: 0px 0px 0px #000000;
   background-blend-mode: difference;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
   font-size: 14px;
@@ -84,7 +99,7 @@ section {
   height: 36px;
   text-shadow: 0px 0px 0px #000000;
   background-blend-mode: difference;
-  font-family: "Benzin-Bold-☞", Helvetica;
+  font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
   font-weight: bold;
   color: #000000;
   font-size: 32px;
@@ -165,8 +180,8 @@ section {
 .a .text-wrapper-4 {
   width: 138px;
   height: 15px;
-  font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: bold;
+  font-family: 'gotham pro', Helvetica, Arial, sans-serif;
+font-weight: 500;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -202,10 +217,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Benzin-Bold-☞", Helvetica;
-  font-weight: bold;
+font-family: 'MyFont', sans-serif;
+  font-weight: 400;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 10px;
   letter-spacing: 0;
   line-height: 11.2px;
   white-space: nowrap;
@@ -224,8 +239,8 @@ section {
   top: 0;
   left: 0;
   height: 15px;
-  font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: bold;
+  font-family: 'gotham pro', Helvetica, Arial, sans-serif;
+font-weight: 500;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -258,8 +273,8 @@ section {
 .a .text-wrapper-7 {
   width: 139px;
   height: 15px;
-  font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: bold;
+  font-family: 'gotham pro', Helvetica, Arial, sans-serif;
+font-weight: 500;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -284,8 +299,8 @@ section {
 .a .text-wrapper-8 {
   width: 147px;
   height: 15px;
-  font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: bold;
+  font-family: 'gotham pro', Helvetica, Arial, sans-serif;
+font-weight: 500;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -301,8 +316,8 @@ section {
   top: 727px;
   left: 230px;
   height: 15px;
-  font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: bold;
+  font-family: 'gotham pro', Helvetica, Arial, sans-serif;
+font-weight: 500;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
@@ -335,8 +350,8 @@ section {
 .a .text-wrapper-10 {
   width: 145px;
   height: 15px;
-  font-family: "Gotham Pro-Medium", Helvetica;
-  font-weight: bold;
+  font-family: 'gotham pro', Helvetica, Arial, sans-serif;
+font-weight: 500;
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
