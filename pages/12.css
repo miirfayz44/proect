@@ -1,4 +1,22 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/Benzin-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham pro';
+  src: url('../fonts/Gotham-Medium.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Benzin-Regular-☞';
+  src: url('../fonts/Benzin-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
@@ -64,7 +82,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .a .group {
@@ -144,7 +162,7 @@ html, body {
   height: 52px;
   background-blend-mode: difference;
   font-family: 'MyFont', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   color: #000000;
   font-size: 32px;
   letter-spacing: 0;

@@ -13,9 +13,12 @@
   font-weight: bold;
   font-style: normal;
 }
-
-
-
+@font-face {
+  font-family: 'Benzin-Regular-☞';
+  src: url('../fonts/Benzin-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -409,7 +412,7 @@ font-weight: 500;
   left: 52px;
   width: 48px;
   height: 38px;
-  font-family: "Benzin-Regular-☞", Helvetica;
+font-family: 'benzin-regular-☞', Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 12px;

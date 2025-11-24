@@ -13,7 +13,12 @@
   font-weight: bold;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Benzin-Regular-☞';
+  src: url('../fonts/Benzin-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
 *{
   -webkit-font-smoothing: antialiased;
@@ -62,7 +67,7 @@ section {
   top: 55px;
   left: 50px;
   font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
-  font-weight: bold;
+  font-weight: 500;
   color: #000000;
   font-size: 14px;
   letter-spacing: 2.80px;
@@ -100,7 +105,7 @@ section {
   text-shadow: 0px 0px 0px #000000;
   background-blend-mode: difference;
   font-family: 'MyFont', sans-serif; /* MyFont bo'lmasa, fallback sans-serif ishlaydi */
-  font-weight: bold;
+  font-weight: 500;
   color: #000000;
   font-size: 32px;
   letter-spacing: 0;
@@ -384,7 +389,7 @@ font-weight: 500;
   left: 52px;
   width: 48px;
   height: 38px;
-  font-family: "Benzin-Regular-☞", Helvetica;
+  font-family: 'benzin-regular-☞', sans-serif;
   font-weight: 400;
   color: #000000;
   font-size: 12px;

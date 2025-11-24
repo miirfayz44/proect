@@ -6,7 +6,20 @@
   src: url('../fonts/Benzin-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
-}* {
+}
+@font-face {
+  font-family: 'gotham pro';
+  src: url('../fonts/Gotham-Medium.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Benzin-Regular-☞';
+  src: url('../fonts/Benzin-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+* {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   margin: 0;
@@ -133,7 +146,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Benzin-Regular-", Helvetica;
+  font-family: 'benzin-regular-☞', sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 12px;
