@@ -318,17 +318,17 @@ font-family: 'benzin-regular-☞', sans-serif;
   }
 
    .div .p{
-    font-size: 10px !important;
-    left: 60px !important;
+    font-size: 9px !important;
+    left: 75px !important;
   }
 
   .a .text-wrapper {
-    left: 109px;
+    left: 124px;
 
   }
   .a .text-wrapper-4 {
-    width: 100% !important;
-    left: 115px !important;
+    width: 75% !important;
+    left: 128px !important;
     max-width: 481px;
     max-height: 52px;
     align-items: center;
@@ -338,10 +338,11 @@ font-family: 'benzin-regular-☞', sans-serif;
     color: #000000; 
     letter-spacing: 0;
     line-height: 26.2px;
+    font-size: 30px !important;
   }
 
   .a .text-wrapper-5 {
-    left: 115px !important;
+    left: 130px !important;
     font-size: 18px !important;
     max-width: 400px;
     max-height: 40px;
@@ -371,33 +372,33 @@ font-family: 'benzin-regular-☞', sans-serif;
 }
 
   .a .bez-znakov {
-    position: absolute;
-    left: 305px;
-    top: 586px; /* Rasmlar joylashuvi */
-    width: 200px;
-    height: 260px;
+      position: absolute;
+      left: 295px;
+      top: 569px;
+      width: 183px;
+      height: 242px;
   }
   
   .a .img {
     position: absolute;
     left: 280px;
-    top: 642px;
-    width: 100px;
-    height: 200px;
+    top: 627px;
+    width: 85px;
+    height: 184px;
   }
   
   .a .bez-znakov-2 {
     position: absolute;
     left: 222px;
-    top: 723px;
+    top: 691px;
     width: 60px;
     height: 120px;
   }
   
   .a .bez-znakov-3 {
     position: absolute;
-    left: 170px;
-    top: 745px;
+    left: 171px;
+    top: 712px;
   }
   
   .wrapper {
@@ -407,5 +408,9 @@ font-family: 'benzin-regular-☞', sans-serif;
 
   .wrapper img {
     height: 60px !important; /* yanada kichrayadi */
+  }
+  .a .text-wrapper-7{
+    left: 116px !important;
+    top: 751px !important;
   }
 }
