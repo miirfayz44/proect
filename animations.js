@@ -480,29 +480,7 @@
         const yesButton = document.querySelector('.group-5 .rectangle-5').parentNode;
         const graveImage = document.querySelector('.pam');
         
-        // Create highlight element
-        const highlight = document.createElement('div');
-        highlight.style.position = 'absolute';
-        highlight.style.border = '3px solid red';
-        highlight.style.borderRadius = '5px';
-        highlight.style.boxShadow = '0 0 10px rgba(255,0,0,0.5)';
-        highlight.style.pointerEvents = 'none';
-        highlight.style.display = 'none';
-        highlight.style.zIndex = '1000';
-        document.querySelector('section').appendChild(highlight);
-        
-        // Create NET label
-        const netLabel = document.createElement('div');
-        netLabel.textContent = 'NET';
-        netLabel.style.position = 'absolute';
-        netLabel.style.color = 'red';
-        netLabel.style.fontWeight = 'bold';
-        netLabel.style.fontSize = '32px';
-        netLabel.style.textShadow = '1px 1px 2px black';
-        netLabel.style.display = 'none';
-        netLabel.style.zIndex = '1001';
-        document.querySelector('section').appendChild(netLabel);
-        
+      
         // Set initial selection from localStorage if exists
         const selectedOption = localStorage.getItem('page4Selection');
         if (selectedOption) {
