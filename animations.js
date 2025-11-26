@@ -47,6 +47,58 @@
   
         // Handle page-specific logic
         handlePageLogic();
+        
+        // Add click handler for epitaph blocks
+        // Get all selectable groups
+        const groups = document.querySelectorAll('.group-3, .group-5, .group-6, .group-7, .group-8, .group-10, .group-11');
+        
+        // Load saved selection from localStorage
+        const savedSelection = localStorage.getItem('selectedEpitaph');
+        if (savedSelection) {
+            const selectedElement = document.querySelector(savedSelection);
+            if (selectedElement) {
+                selectedElement.classList.add('selected');
+            }
+        }
+
+        // Add click event listeners
+        groups.forEach(group => {
+            group.addEventListener('click', function() {
+                // Remove selected class from all groups
+                groups.forEach(g => g.classList.remove('selected'));
+                
+                // Add selected class to clicked group
+                this.classList.add('selected');
+                
+                // Save selection to localStorage
+                const selector = '.' + Array.from(this.classList).find(cls => cls.startsWith('group-'));
+                localStorage.setItem('selectedEpitaph', selector);
+            });
+        });
+
+        // Function to make list items selectable
+        function setupSelectableItems(containerSelector = '.a') {
+            const container = document.querySelector(containerSelector);
+            if (!container) return;
+            
+            // Add click event listener to the container (event delegation)
+            container.addEventListener('click', function(event) {
+                const item = event.target.closest('.selectable-item');
+                if (!item) return;
+                
+                // Toggle selected class
+                item.classList.toggle('selected');
+                
+                // If you want to allow only one selection at a time, uncomment the following lines:
+                // const allItems = container.querySelectorAll('.selectable-item');
+                // allItems.forEach(i => {
+                //     if (i !== item) i.classList.remove('selected');
+                // });
+            });
+        }
+
+        // Initialize selectable items
+        setupSelectableItems();
     });
   
     function handlePageLogic() {
@@ -124,9 +176,7 @@
               handleAutoTransition(11, 12, 60000);
               break;
           case 12: 
-              // Don't auto-navigate from page 12
-              // Add a button or other UI element to go back to page 1
-              setupBackToStartButton();
+          handleAutoTransition(12, 1, 60000);
               break;
       }
     }
@@ -479,7 +529,6 @@
         const noButton = document.querySelector('.group-5');
         const yesButton = document.querySelector('.group-5 .rectangle-5').parentNode;
         const graveImage = document.querySelector('.pam');
-        
       
         // Set initial selection from localStorage if exists
         const selectedOption = localStorage.getItem('page4Selection');
@@ -576,25 +625,21 @@
             document.querySelector('.group-5'),
             document.querySelector('.group-6'),
             document.querySelector('.group-7'),
-            document.querySelector('.group-10'),
+            document.querySelector('.group-10'), // 5th option
             document.querySelector('.group-11'),
             document.querySelector('.group-8') // Custom epitaph
         ].filter(Boolean); // Remove any null elements
 
-        // Set initial selection from localStorage if exists
-        const selectedBlockId = localStorage.getItem('selectedBlockId');
-        if (selectedBlockId) {
-            const selectedBlock = document.querySelector(selectedBlockId);
-            if (selectedBlock) {
-                const priceBox = selectedBlock.querySelector('.rectangle-3, .rectangle-4');
-                if (priceBox) priceBox.classList.add('selected');
-            }
-        } else if (epitaphBlocks[0]) {
-            // Default to first block if none selected
-            const firstPriceBox = epitaphBlocks[0].querySelector('.rectangle-3, .rectangle-4');
-            if (firstPriceBox) {
-                firstPriceBox.classList.add('selected');
-                localStorage.setItem('selectedBlockId', '#' + epitaphBlocks[0].id);
+        // Select the 5th option (group-10) by default
+        const defaultBlock = document.querySelector('.group-10');
+        if (defaultBlock) {
+            const priceBox = defaultBlock.querySelector('.rectangle-3');
+            if (priceBox) {
+                priceBox.classList.add('selected');
+                priceBox.style.border = '2px solid #808080';
+                priceBox.style.borderRadius = '5px';
+                priceBox.style.boxSizing = 'border-box';
+                localStorage.setItem('selectedBlockId', '#' + defaultBlock.id);
             }
         }
 
@@ -636,8 +681,15 @@
                         localStorage.setItem('customEpitaphText', customText);
                         localStorage.setItem('customEpitaphPrice', price);
                     } else {
-                        // If user cancels, remove selection
+                        // If user cancels, select the 5th option by default
                         priceBox.classList.remove('selected');
+                        const defaultBox = document.querySelector('.group-10 .rectangle-3');
+                        if (defaultBox) {
+                            defaultBox.classList.add('selected');
+                            defaultBox.style.border = '2px solid #808080';
+                            defaultBox.style.borderRadius = '5px';
+                            localStorage.setItem('selectedBlockId', '.group-10');
+                        }
                         return;
                     }
                 }

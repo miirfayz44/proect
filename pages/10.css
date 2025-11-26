@@ -429,80 +429,36 @@ a {
   line-height: 27.2px;
 }
 
-/* Font selection styles */
-.gotham-pro-medium,
-.gotham-pro-black,
-.benzin-bold,
-.benzin-medium {
-  position: relative;
+/* Style for selectable list items */
+.selectable-item {
   cursor: pointer;
   transition: all 0.3s ease;
-  padding: 15px;
-  margin: 10px 0;
-  border: 3px solid transparent;
-  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border: 2px solid #d0d0d0;  /* Slightly darker default border */
+  border-radius: 6px;
+  background-color: #ffffff;
+  position: relative;
   box-sizing: border-box;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect for font options */
-.gotham-pro-medium:hover,
-.gotham-pro-black:hover,
-.benzin-bold:hover,
-.benzin-medium:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-color: #888888;
+/* Hover effect */
+.selectable-item:hover {
+  background-color: #f5f5f5;
+  border-color: #a0a0a0;  /* Darker border on hover */
 }
 
-/* Selected font style */
-.gotham-pro-medium.selected,
-.gotham-pro-black.selected,
-.benzin-bold.selected,
-.benzin-medium.selected {
-  border: 3px solid #555555;
-  box-shadow: 0 0 0 3px #888888;
-  transform: translateY(-3px);
+/* Selected state with prominent border */
+.selectable-item.selected {
+  background-color: #f0f0f0;
+  border: 3px solid #808080;  /* Thicker gray border when selected */
+  padding: 7px 11px;  /* Adjust padding to account for thicker border */
 }
 
-/* Font specific styles */
-.gotham-pro-medium {
-  font-family: 'Gotham Pro', Arial, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.gotham-pro-black {
-  font-family: 'Gotham Pro', Arial, sans-serif;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.benzin-bold {
-  font-family: 'MyFont', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.benzin-medium {
-  font-family: 'Benzin-Regular-☞', Arial, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* Ensure proper spacing between font options */
-.text-wrapper-7,
-.text-wrapper-8,
-.text-wrapper-9,
-.text-wrapper-10 {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
+/* Click effect */
+.selectable-item:active {
+  transform: scale(0.98);
+  border-color: #606060;  /* Even darker when clicked */
 }
 
 /* ============================= */

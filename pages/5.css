@@ -632,51 +632,44 @@ font-family: 'benzin-regular-☞', sans-serif; /* MyFont bo'lmasa, fallback sans
 .group-11,
 .group-8 {
   cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 5px;
   border-radius: 5px;
+  transition: border-color 0.2s ease;
+  border: 2px solid transparent;
 }
 
-/* Hover effect for blocks */
-.group-3:hover,
-.group-5:hover,
-.group-6:hover,
-.group-7:hover,
-.group-10:hover,
-.group-11:hover,
-.group-8:hover {
-  background-color: rgba(0, 0, 0, 0.03);
+/* Hover effect for blocks - only changes border color */
+.group-3:hover:not(.selected),
+.group-5:hover:not(.selected),
+.group-6:hover:not(.selected),
+.group-7:hover:not(.selected),
+.group-10:hover:not(.selected),
+.group-11:hover:not(.selected),
+.group-8:hover:not(.selected) {
+  border-color: #808080 !important;
+  background-color: inherit !important;
+}
+
+/* Selected state - more prominent styling */
+.group-3.selected,
+.group-5.selected,
+.group-6.selected,
+.group-7.selected,
+.group-10.selected,
+.group-11.selected,
+.group-8.selected {
+  border: 2px solid #000000 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+  transition: all 0.2s ease;
 }
 
 /* Style for the price boxes */
 .rectangle-3,
 .rectangle-4 {
-  transition: all 0.3s ease;
-  background-color: #c4c4c4; /* Light gray background */
   border-radius: 3px;
   position: relative;
   display: inline-block;
-  padding: 5px 10px;
-}
-
-/* Selected state for price boxes */
-.rectangle-3.selected,
-.rectangle-4.selected {
-  background-color: #888888 !important;
-  box-shadow: 0 0 0 2px #555555;
-  color: white;
-}
-
-/* Hover effect for price boxes */
-.group-3:hover .rectangle-3,
-.group-5:hover .rectangle-3,
-.group-6:hover .rectangle-3,
-.group-7:hover .rectangle-3,
-.group-10:hover .rectangle-3,
-.group-11:hover .rectangle-3,
-.group-8:hover .rectangle-4 {
-  background-color: #b0b0b0;
-  transform: scale(1.05);
 }
 
 /* Make sure text in the blocks doesn't get highlighted on click */
