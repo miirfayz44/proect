@@ -70,6 +70,7 @@
                   '.bez-znakov-4': { target: '3.html', page: 2, id: 'img5' },
                   '.bez-znakov-5': { target: '3.html', page: 2, id: 'img6' }
               });
+              handleAutoTransition(2, 3, 60000);
               break;
           case 3: 
               // Make images clickable on page 3
@@ -77,7 +78,7 @@
                   'img': { target: '4.html', page: 3, id: 'img1' } // All images on page 3
               });
               // Auto-transition to page 5 after 60 seconds
-              handleAutoTransition(3, 5, 60000);
+              handleAutoTransition(3, 4, 60000);
               break;
           case 4:
               // Handle page 4 buttons
