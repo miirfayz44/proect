@@ -429,8 +429,84 @@ a {
   line-height: 27.2px;
 }
 
+/* Font selection styles */
+.gotham-pro-medium,
+.gotham-pro-black,
+.benzin-bold,
+.benzin-medium {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 15px;
+  margin: 10px 0;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for font options */
+.gotham-pro-medium:hover,
+.gotham-pro-black:hover,
+.benzin-bold:hover,
+.benzin-medium:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #888888;
+}
+
+/* Selected font style */
+.gotham-pro-medium.selected,
+.gotham-pro-black.selected,
+.benzin-bold.selected,
+.benzin-medium.selected {
+  border: 3px solid #555555;
+  box-shadow: 0 0 0 3px #888888;
+  transform: translateY(-3px);
+}
+
+/* Font specific styles */
+.gotham-pro-medium {
+  font-family: 'Gotham Pro', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.gotham-pro-black {
+  font-family: 'Gotham Pro', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.benzin-bold {
+  font-family: 'MyFont', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.benzin-medium {
+  font-family: 'Benzin-Regular-☞', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Ensure proper spacing between font options */
+.text-wrapper-7,
+.text-wrapper-8,
+.text-wrapper-9,
+.text-wrapper-10 {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
 /* ============================= */
-/*  📱 MOBILE SAFE SCALE (max 480px) */
+/*  MOBILE SAFE SCALE (max 480px) */
 /* ============================= */
 @media (max-width: 480px) {
   .a .benzin-bold {

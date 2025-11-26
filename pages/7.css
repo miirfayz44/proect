@@ -481,3 +481,45 @@ body {
     font-size: 16px;
   }
 }
+
+/* Selected image style */
+.selected-image {
+    filter: brightness(0.8);
+    box-shadow: 0 0 0 3px #888888 !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* Add a pseudo-element for the selection indicator */
+.selected-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+/* Ensure images are positioned relatively for the selection indicator */
+[data-image-id] {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+[data-image-id]:hover {
+    filter: brightness(0.9);
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+/* Add this to ensure the selection is visible on all images */
+img[data-image-id] {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
