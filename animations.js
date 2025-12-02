@@ -172,7 +172,7 @@
               handleAutoTransition(10, 11, 60000);
               break;
           case 11:
-              setupPaymentForm();
+              setupPaymentButton();
               handleAutoTransition(11, 12, 60000);
               break;
           case 12: 
@@ -525,6 +525,30 @@
       }, 3000);
     }
 
+    // Setup payment button click handler for page 11
+    function setupPaymentButton() {
+        // Add click handler to the payment button
+        const paymentButton = document.querySelector('.rectangle-8');
+        if (paymentButton) {
+            paymentButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Navigate directly to page 12 without validation for now
+                navigateToPage('12.html');
+            });
+        }
+        
+        // Also make the text clickable
+        const paymentText = document.querySelector('.text-wrapper-14');
+        if (paymentText) {
+            paymentText.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Trigger the payment button click
+                if (paymentButton) paymentButton.click();
+            });
+        }
+    }
+
+    // Handle page 4 buttons
     function setupPage4Buttons() {
         const noButton = document.querySelector('.group-5');
         const yesButton = document.querySelector('.group-5 .rectangle-5').parentNode;
