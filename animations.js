@@ -19,8 +19,8 @@
                 0%, 100% { transform: scale(1); }
                 50% { transform: scale(1.1); }
             }
-            @keyframes slideInFromRight {
-                from { transform: translateX(100%); opacity: 0; }
+            @keyframes slideInFromLeft {
+                from { transform: translateX(-100%); opacity: 0; }
                 to { transform: translateX(0); opacity: 1; }
             }
         `;
@@ -33,13 +33,13 @@
         const mainContainer = document.querySelector('section') || document.querySelector('.a') || document.querySelector('body > div') || body;
   
         // Set initial position for slide-in animation
-        mainContainer.style.transform = 'translateX(100%)';
+        mainContainer.style.transform = 'translateX(-100%)';
         mainContainer.style.opacity = '0';
-        mainContainer.style.transition = 'transform 1s ease-in-out, opacity 1s ease-in-out';
+        mainContainer.style.transition = 'transform 1.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.5s ease-in-out';
         html.style.overflow = 'hidden';
         body.style.overflow = 'hidden';
   
-        // Slide in from right
+        // Slide in from left
         setTimeout(() => {
             mainContainer.style.transform = 'translateX(0)';
             mainContainer.style.opacity = '1';
@@ -410,7 +410,7 @@
             top: 15px;
             right: 15px;
             background: rgba(0,0,0,0.6);
-            color: #fff;
+            color: #000000; 
             padding: 5px 10px;
             border-radius: 4px;
             font-size: 14px;
@@ -432,7 +432,7 @@
         timerElement.style.position = 'fixed';
         timerElement.style.top = '20px';
         timerElement.style.right = '20px';
-        timerElement.style.color = '#ffffff'; // Set text color to white
+        timerElement.style.color = '#000000'; // Set text color to white
         timerElement.style.fontSize = '24px';
         timerElement.style.zIndex = '1000';
         timerElement.style.fontFamily = '"Gotham Pro", sans-serif';
@@ -486,6 +486,9 @@
         
         const mainContainer = document.querySelector('section') || document.querySelector('.a') || document.querySelector('body > div') || document.body;
         
+        // Set the transition for the slide-out animation
+        mainContainer.style.transition = 'transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s ease-in-out';
+        
         // Force a reflow to ensure the style is applied
         void mainContainer.offsetHeight;
         
@@ -493,9 +496,10 @@
         mainContainer.style.transform = 'translateX(-100%)';
         mainContainer.style.opacity = '0';
         
+        // Increase the timeout to match the animation duration
         setTimeout(() => {
             window.location.href = typeof nextPage === 'number' ? nextPage + '.html' : nextPage;
-        }, 500);
+        }, 1000); // Increased from 500ms to 1000ms (1 second)
     }
   
     // Setup payment button click handler for page 11
