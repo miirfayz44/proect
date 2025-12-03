@@ -428,28 +428,41 @@
   
     // Auto-transition with countdown
     function handleAutoTransition(fromPage, toPage, delay) {
-        const seconds = delay / 1000;
-        const timer = createCountdownTimer(seconds);
-        let remaining = seconds;
-  
-        const interval = setInterval(() => {
-            remaining--;
-            if (remaining > 0) {
-                timer.textContent = remaining;
-                if (remaining <= 3) {
-                    timer.style.animation = 'pulse 0.5s ease-in-out';
-                }
-            } else {
-                clearInterval(interval);
-                timer.textContent = '0';
+        const timerElement = document.createElement('div');
+        timerElement.style.position = 'fixed';
+        timerElement.style.top = '20px';
+        timerElement.style.right = '20px';
+        timerElement.style.color = '#ffffff'; // Set text color to white
+        timerElement.style.fontSize = '24px';
+        timerElement.style.zIndex = '1000';
+        timerElement.style.fontFamily = '"Gotham Pro", sans-serif';
+        timerElement.style.textShadow = '1px 1px 2px rgba(0,0,0,0.5)';
+        document.body.appendChild(timerElement);
+        
+        let timeLeft = delay / 1000;
+        timerElement.textContent = timeLeft;
+        
+        const timer = setInterval(() => {
+            timeLeft--;
+            timerElement.textContent = timeLeft;
+            
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                // Ensure all text is white before navigation
+                document.body.style.color = '#ffffff';
+                // Force a reflow to ensure the style is applied
+                void document.body.offsetHeight;
+                navigateToPage(toPage);
             }
         }, 1000);
-  
-        setTimeout(() => {
-            clearInterval(interval);
-            if (typeof toPage === 'number') toPage = toPage + '.html';
-            navigateToPage(toPage);
-        }, delay);
+        
+        // Clean up timer if user navigates away
+        return () => {
+            clearInterval(timer);
+            if (timerElement.parentNode) {
+                timerElement.parentNode.removeChild(timerElement);
+            }
+        };
     }
   
     // Prevent multiple rapid clicks
@@ -457,74 +470,34 @@
   
     // Smooth navigation with slide effect
     function navigateToPage(nextPage) {
-      if (isNavigating) return;
-      isNavigating = true;
-      
-      // Get current and next page numbers
-      const currentPage = window.location.pathname.split('/').pop() || '1.html';
-      const currentPageNum = parseInt(currentPage.replace('.html', '')) || 1;
-      const nextPageNum = parseInt(nextPage.replace('.html', '')) || 1;
-      
-      // If going to a previous page, clear all selections
-      if (nextPageNum < currentPageNum) {
-        clearAllSelections();
-      }
-      
-      const body = document.body;
-      const html = document.documentElement;
-  
-      // Find main container
-      const mainContainer = document.querySelector('section') || document.querySelector('.a') || document.querySelector('body > div') || body;
-  
-      html.style.overflow = 'hidden';
-      body.style.overflow = 'hidden';
-      body.style.position = 'relative';
-  
-      const nextPageFrame = document.createElement('iframe');
-      nextPageFrame.src = nextPage;
-      nextPageFrame.style.cssText = `
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border: none;
-          transform: translateX(100%);
-          opacity: 0;
-          transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
-          z-index: 1000;
-          background: #000;
-          pointer-events: none;
-      `;
-      body.appendChild(nextPageFrame);
-  
-      nextPageFrame.onload = function() {
-        nextPageFrame.offsetHeight;
-  
-        requestAnimationFrame(() => {
-            mainContainer.style.transition = 'transform 1.2s ease-in-out, opacity 1.2s ease-in-out';
-            mainContainer.style.transform = 'translateX(-100%)';
-            mainContainer.style.opacity = '0';
-  
-            nextPageFrame.style.transform = 'translateX(0)';
-            nextPageFrame.style.opacity = '1';
+        if (isNavigating) return;
+        isNavigating = true;
+        
+        // Set text color to white at the start of navigation
+        document.documentElement.style.setProperty('color', '#ffffff', 'important');
+        document.body.style.setProperty('color', '#ffffff', 'important');
+        
+        // Also set text color for all text elements
+        const allElements = document.querySelectorAll('*');
+        allElements.forEach(el => {
+            el.style.setProperty('color', '#ffffff', 'important');
+            el.style.setProperty('transition', 'color 0.5s ease');
         });
-  
+        
+        const mainContainer = document.querySelector('section') || document.querySelector('.a') || document.querySelector('body > div') || document.body;
+        
+        // Force a reflow to ensure the style is applied
+        void mainContainer.offsetHeight;
+        
+        // Slide out to left
+        mainContainer.style.transform = 'translateX(-100%)';
+        mainContainer.style.opacity = '0';
+        
         setTimeout(() => {
-            window.location.href = nextPage;
-        }, 1200);
-      };
-  
-      setTimeout(() => {
-        if (nextPageFrame.style.opacity === '0') {
-            mainContainer.style.transition = 'transform 1.2s ease-in-out, opacity 1.2s ease-in-out';
-            mainContainer.style.transform = 'translateX(-100%)';
-            mainContainer.style.opacity = '0';
-            setTimeout(() => { window.location.href = nextPage; }, 1200);
-        }
-      }, 3000);
+            window.location.href = typeof nextPage === 'number' ? nextPage + '.html' : nextPage;
+        }, 500);
     }
-
+  
     // Setup payment button click handler for page 11
     function setupPaymentButton() {
         // Add click handler to the payment button
