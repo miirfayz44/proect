@@ -99,8 +99,35 @@
 
         // Initialize selectable items
         setupSelectableItems();
+        
+        // Make text wrappers clickable
+        setupTextWrapperClicks();
     });
-  
+
+    // Add new function to handle text wrapper clicks
+    function setupTextWrapperClicks() {
+        // Get all text wrappers that should be clickable
+        const textWrappers = [
+            document.querySelector('.text-wrapper-9'),
+            document.querySelector('.text-wrapper-11'),
+            document.querySelector('.text-wrapper-12'),
+            document.querySelector('.text-wrapper-13'),
+            document.querySelector('.text-wrapper-17'),
+            document.querySelector('.text-wrapper-18')
+        ];
+
+        // Add click event to each text wrapper
+        textWrappers.forEach(wrapper => {
+            if (wrapper) {
+                wrapper.style.cursor = 'pointer';
+                wrapper.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    navigateToPage('6.html');
+                });
+            }
+        });
+    }
+
     function handlePageLogic() {
       // Load saved selections from localStorage
       const savedSelections = JSON.parse(localStorage.getItem('formSelections') || '{}');
@@ -426,13 +453,12 @@
         return timer;
     }
   
-    // Auto-transition with countdown
     function handleAutoTransition(fromPage, toPage, delay) {
         const timerElement = document.createElement('div');
         timerElement.style.position = 'fixed';
         timerElement.style.top = '20px';
         timerElement.style.right = '20px';
-        timerElement.style.color = '#000000'; // Set text color to white
+        timerElement.style.color = '#000000';
         timerElement.style.fontSize = '24px';
         timerElement.style.zIndex = '1000';
         timerElement.style.fontFamily = '"Gotham Pro", sans-serif';
@@ -448,15 +474,12 @@
             
             if (timeLeft <= 0) {
                 clearInterval(timer);
-                // Ensure all text is white before navigation
                 document.body.style.color = '#ffffff';
-                // Force a reflow to ensure the style is applied
                 void document.body.offsetHeight;
                 navigateToPage(toPage);
             }
         }, 1000);
         
-        // Clean up timer if user navigates away
         return () => {
             clearInterval(timer);
             if (timerElement.parentNode) {

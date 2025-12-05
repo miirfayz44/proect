@@ -466,34 +466,6 @@ section {
   height: auto;
 }
 
-/* Position first image */
-.a-a-edf {
-  top: 200px;
-  left: 50px;
-}
-
-/* Position second image */
-.element {
-  top: 200px;
-  right: 50px;
-}
-
-/* Hover effect for images */
-.a-a-edf:hover,
-.element:hover {
-  transform: scale(1.02);
-  border-color: #888888;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Selected image style */
-.a-a-edf.selected,
-.element.selected {
-  border: 3px solid #555555;
-  box-shadow: 0 0 0 3px #888888;
-  transform: scale(1.02);
-}
-
 /* ============================= */
 /*  MOBILE SAFE SCALE (max 480px) */
 /* ============================= */
