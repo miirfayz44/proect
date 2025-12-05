@@ -102,7 +102,40 @@
         
         // Make text wrappers clickable
         setupTextWrapperClicks();
+        
+        // Setup image clicks for page 6
+        if (window.location.pathname.endsWith('6.html')) {
+            setupPage6ImageClicks();
+        }
+        
+        // Setup image clicks for page 9
+        if (window.location.pathname.endsWith('9.html')) {
+            setupPage9ImageClicks();
+        }
     });
+
+    // Function to handle image and text clicks on page 9
+    function setupPage9ImageClicks() {
+        // Select the specific images by class
+        const images = document.querySelectorAll('.element, .a-a-edf');
+        
+        // Select the text wrappers that should be clickable
+        const textWrappers = document.querySelectorAll('.text-wrapper-8, .text-wrapper-12, .text-wrapper-13, .text-wrapper-14');
+        
+        // Combine both selections
+        const clickableElements = [...images, ...textWrappers];
+        
+        // Add click event to each element
+        clickableElements.forEach(element => {
+            element.style.cursor = 'pointer';
+            element.addEventListener('click', function(e) {
+                e.preventDefault();
+                const nextPage = document.querySelector('.a').getAttribute('data-next-page') || '10.html';
+                console.log('Navigating to:', nextPage);
+                navigateToPage(nextPage);
+            });
+        });
+    }
 
     // Add new function to handle text wrapper clicks
     function setupTextWrapperClicks() {

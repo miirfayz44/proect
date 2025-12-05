@@ -155,33 +155,33 @@ html, body {
   white-space: normal;
 }
 
-.a .text-wrapper-4 {
-  top: 402px;
-  left: 50px;
-  width: 481px;
-  height: 52px;
-  background-blend-mode: difference;
-  font-family: 'MyFont', sans-serif;
-  font-weight: 400;
-  color: #000000;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: 26.2px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .a .text-wrapper-4 {
+    top: 385px;
+    left: 50px;
+    width: 481px;
+    height: 52px;
+    background-blend-mode: difference;
+    font-family: 'MyFont', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 32.2px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .a .text-wrapper-5 {
-  top: 459px;
+  top: 460px;
   left: 50px;
   height: 32px;
   font-family: "Gotham Pro-Regular", Helvetica;
   color: #000000;
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 16.4px;
+  line-height: 21.4px;
   position: absolute;
   display: flex;
   align-items: center;
