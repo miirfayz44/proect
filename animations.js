@@ -229,6 +229,7 @@
               break;
           case 10:
               setupFontSelection();
+              handlePage10(); // Add this line to handle page 10 specific navigation
               handleAutoTransition(10, 11, 60000);
               break;
           case 11:
@@ -1064,5 +1065,24 @@
                 });
             }
         });
+    }
+
+    // Page 10: Handle font selection navigation
+    function handlePage10() {
+        const textWrapper9 = document.querySelector('.text-wrapper-9');
+        if (textWrapper9) {
+            // Remove all existing event listeners by cloning the element
+            const parent = textWrapper9.parentNode;
+            const newTextWrapper9 = textWrapper9.cloneNode(true);
+            parent.replaceChild(newTextWrapper9, textWrapper9);
+            
+            // Add new click handler
+            newTextWrapper9.onclick = function(e) {
+                console.log('Navigating to 11.html');
+                navigateToPage('11.html');
+                return false;
+            };
+            newTextWrapper9.style.cursor = 'pointer';
+        }
     }
 })();
