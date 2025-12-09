@@ -182,6 +182,22 @@
                   '.bez-znakov-4': { target: '3.html', page: 2, id: 'img5' },
                   '.bez-znakov-5': { target: '3.html', page: 2, id: 'img6' }
               });
+              
+              // Make text wrappers clickable
+              const textWrappers = ['.text-wrapper-4', '.text-wrapper-5', '.text-wrapper-6', 
+                                 '.text-wrapper-7', '.text-wrapper-8', '.text-wrapper-9', '.text-wrapper-10'];
+              
+              textWrappers.forEach(selector => {
+                  const elements = document.querySelectorAll(selector);
+                  elements.forEach(element => {
+                      element.style.cursor = 'pointer';
+                      element.addEventListener('click', function(e) {
+                          e.stopPropagation();
+                          navigateToPage('3.html');
+                      });
+                  });
+              });
+              
               handleAutoTransition(2, 3, 60000);
               break;
           case 3: 
@@ -189,6 +205,22 @@
               setupImageNavigation({
                   'img': { target: '4.html', page: 3, id: 'img1' } // All images on page 3
               });
+              
+              // Make text wrappers clickable
+              const textWrappersPage3 = ['.text-wrapper-4', '.text-wrapper-5', '.text-wrapper-6', 
+                                      '.text-wrapper-7', '.text-wrapper-8', '.text-wrapper-9', '.text-wrapper-10'];
+              
+              textWrappersPage3.forEach(selector => {
+                  const elements = document.querySelectorAll(selector);
+                  elements.forEach(element => {
+                      element.style.cursor = 'pointer';
+                      element.addEventListener('click', function(e) {
+                          e.stopPropagation();
+                          navigateToPage('4.html');
+                      });
+                  });
+              });
+              
               // Auto-transition to page 5 after 60 seconds
               handleAutoTransition(3, 4, 60000);
               break;
